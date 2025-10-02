@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'iconoplastic';
+    src: url('/assets/img/iconoplastic.ttf');
+}
+
+* {
+    font-family: 'iconoplastic', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4a5858;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.list-nav {
+    display: flex;
+    align-items: center;
+}
+
+.list-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #f0f0f0;
+    border-bottom: 2px solid #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.login button {
+    border: none;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.login button a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width:730px){
+    .menu-nav {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-link {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}
